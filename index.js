@@ -18,7 +18,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 //Route for the Home Page
-//HANDLEBAR IS DES
+//HANDLEBAR IS DE
+//test EJS
 app.get("/",(req,res)=>{
     res.render("home",{
         title:"Home Page",
