@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 //Route for the Home Page
+//HANDLEBAR IS DES
 app.get("/",(req,res)=>{
     res.render("home",{
         title:"Home Page",
@@ -90,7 +91,7 @@ app.get("/productspage",(req,res)=>{
         products :productModel.getAllProducts(),
     });
 });
-const PORT=3000;
+const PORT=process.env.PORT||3000;
 //This creates an Express Web Server that listens to HTTP Reuqest on port 3000
 app.listen(PORT,()=>{
     console.log(`Web Server Started`);
