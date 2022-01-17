@@ -1,4 +1,29 @@
-
+html {
+    min-height: 100% !important;
+    height: 100%;
+}
+/* box: to center align */
+.box {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .box {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .box {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .box {
+      width: 1170px;
+    }
+  }
 /*style for navigation bar, their list*/
 #navBelt > div > div.main_navigationBar > nav > ul > li {
 
@@ -129,9 +154,10 @@ input {
     padding-left: 35px;
 }
 .banner_promotion{
-    background-image: url('valentine.png');
+    background-image: url('valentine.jpg');
     width: 100%;
-    height: 237px;
+    height: 280px;
+    background-size:cover;
 }
 /*product category here. listOf_items  items  list  */
 #promotion_box {
